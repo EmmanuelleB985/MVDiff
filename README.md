@@ -126,20 +126,28 @@ mesh.export("output.obj")
 
 ### Data Preparation
 
-#### Download Dataset
+First, download the datasets:
 
-# ShapeNet (requires registration at shapenet.org)
+##### ShapeNet (requires registration at shapenet.org)
+```bash
 wget [shapenet_download_link]
 unzip ShapeNetCore.v2.zip
 unzip ShapeNetRendering.zip
+```
 
-# CO3D (from Facebook Research)
+##### CO3D (from Facebook Research)
+```bash
 wget https://dl.fbaipublicfiles.com/co3d/co3d_v2.zip
 unzip co3d_v2.zip
+```
 
-# GSO (Google Scanned Objects)
+##### GSO (Google Scanned Objects)
+```bash
 git clone https://github.com/googleinterns/gso-dataset.git
 cd gso-dataset && bash download_gso.sh
+```
+
+Then, prepare the datasets for training:
 
 #### ShapeNet Dataset
 ```bash
