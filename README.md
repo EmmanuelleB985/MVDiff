@@ -38,7 +38,6 @@
 | One-2-3-45 | 26.91 | 0.860 | 0.128 | 38.2 | 280 |
 | **MVDiff (Ours)** | **28.42** | **0.889** | **0.106** | **31.5** | **250** |
 
-<img src="assets/qualitative_results.png" width="700px">
 
 </div>
 
