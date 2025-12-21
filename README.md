@@ -1,4 +1,4 @@
-# MVDiff: Scalable and Flexible Multi-View Diffusion for 3D Object Reconstruction
+# MVDiff: Scalable and Flexible Multi-View Diffusion for 3D Object Reconstruction [CVPRW2024]
 
 <div align="center">
 
