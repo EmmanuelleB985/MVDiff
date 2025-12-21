@@ -1,0 +1,63 @@
+# MVDiff Training Configuration for ShapeNet
+
+# Model configuration
+model:
+  img_size: 256
+  img_channels: 3
+  num_diffusion_steps: 1000
+  beta_schedule: cosine
+  srt_config:
+    embed_dim: 768
+    depth: 12
+    num_heads: 12
+    mlp_ratio: 4.0
+    patch_size: 16
+    dropout: 0.1
+  unet_config:
+    base_channels: 64
+    channel_mult: [1, 2, 4, 8]
+    num_res_blocks: 2
+    attention_resolutions: [16]
+    dropout: 0.1
+
+# Data configuration
+data:
+  root: data/shapenet_mvdiff
+  train:
+    num_views: 24
+    augment: true
+  val:
+    num_views: 24
+    augment: false
+
+# Training configuration
+training:
+  batch_size: 4
+  num_epochs: 200
+  num_workers: 8
+  gradient_clip: 1.0
+  mixed_precision: false
+
+# Optimizer configuration
+optimizer:
+  type: adamw
+  lr: 0.0001
+  beta1: 0.9
+  beta2: 0.999
+  weight_decay: 0.01
+
+# Scheduler configuration
+scheduler:
+  type: cosine
+  T_max: 200
+  eta_min: 1.0e-06
+
+# Logging configuration
+logging:
+  tensorboard_dir: runs/mvdiff_shapenet
+  checkpoint_dir: checkpoints/mvdiff_shapenet
+  log_interval: 100
+  val_interval: 1
+  checkpoint_interval: 10
+  use_wandb: false
+  wandb_project: mvdiff
