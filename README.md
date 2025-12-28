@@ -332,12 +332,13 @@ make lint
 If you use MVDiff in your research, please cite:
 
 ```bibtex
-@article{bourigault2024mvdiff,
-  title={MVDiff: Scalable and Flexible Multi-View Diffusion for 3D Object Reconstruction from Single-View},
-  author={Bourigault, Emmanuelle and Bourigault, Pauline},
-  journal={arXiv preprint arXiv:2405.03894},
+@article{Bourigault2024MVDiffSA,
+  title={MVDiff: Scalable and Flexible Multi-view Diffusion for 3D Object Reconstruction from Single-View},
+  author={Emmanuelle Bourigault and Pauline Bourigault},
+  journal={2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)},
   year={2024},
-  url={https://arxiv.org/abs/2405.03894}
+  pages={7579-7586},
+  url={https://api.semanticscholar.org/CorpusID:269614322}
 }
 ```
 
