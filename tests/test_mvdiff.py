@@ -130,7 +130,7 @@ class TestModels:
         F = compute_fundamental_matrix(K1, K2, R, t)
 
         assert F.shape == (1, 3, 3)
-        # Fundamental matrix should have rank 2 
+        # Fundamental matrix should have rank 2
         assert torch.abs(torch.det(F[0])) < 1e-4
 
     @pytest.mark.unit
@@ -358,3 +358,4 @@ class TestUtilities:
 
 if __name__ == "__main__":
     pytest.main([__file__, "-v", "--tb=short"])
+
