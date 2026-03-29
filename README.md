@@ -2,7 +2,6 @@
 
 <div align="center">
 
-[![arXiv](https://img.shields.io/badge/arXiv-2405.03894-b31b1b.svg)](https://arxiv.org/pdf/2405.03894)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
