@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![arXiv](https://img.shields.io/badge/arXiv-2405.03894-b31b1b.svg)](https://arxiv.org/pdf/2405.03894)
+[![Proceeding](https://openaccess.thecvf.com/content/CVPR2024W/GCV/papers/Bourigault_MVDiff_Scalable_and_Flexible_Multi-view_Diffusion_for_3D_Object_Reconstruction_CVPRW_2024_paper.pdf)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
@@ -12,7 +12,7 @@
 
 <img src="assets/mvdiff_banner.png" width="800px">
 
-**[Paper](https://arxiv.org/pdf/2405.03894)** 
+**[Paper](https://openaccess.thecvf.com/content/CVPR2024W/GCV/papers/Bourigault_MVDiff_Scalable_and_Flexible_Multi-view_Diffusion_for_3D_Object_Reconstruction_CVPRW_2024_paper.pdf)** 
 </div>
 
 ## Overview
