@@ -5,13 +5,13 @@ Prepares GSO dataset for MVDiff training
 """
 
 import argparse
+import io
 import json
 import logging
-import os
 import shutil
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List, Optional
 
 import cv2
 import numpy as np
@@ -289,7 +289,7 @@ class GSOPreparer:
                     )
                     img = Image.open(io.BytesIO(image_data))
 
-                except:
+                except Exception:
                     # Fallback: create blank image
                     img = Image.new("RGB", (self.IMAGE_SIZE, self.IMAGE_SIZE), "white")
 
@@ -520,17 +520,6 @@ Example usage:
     # Validate ratios
     if abs(args.train_ratio + args.val_ratio + args.test_ratio - 1.0) > 0.001:
         parser.error("Train, val, and test ratios must sum to 1.0")
-
-    # Check for trimesh if rendering
-    if args.render_views:
-        try:
-            import io
-
-            import trimesh
-        except ImportError:
-            logger.error("trimesh is required for rendering views")
-            logger.error("Install with: pip install trimesh")
-            return
 
     # Initialize preparer
     preparer = GSOPreparer(
