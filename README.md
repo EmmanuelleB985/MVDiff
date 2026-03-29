@@ -1,7 +1,6 @@
 # MVDiff: Scalable and Flexible Multi-View Diffusion for 3D Object Reconstruction [CVPRW2024]
 
 <div align="center">
-[![CVPRW 2024](https://img.shields.io/badge/CVPRW-2024-4b44ce.svg)](https://openaccess.thecvf.com/content/CVPR2024W/GCV/papers/Bourigault_MVDiff_Scalable_and_Flexible_Multi-view_Diffusion_for_3D_Object_Reconstruction_CVPRW_2024_paper.pdf)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
