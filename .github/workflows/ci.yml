@@ -27,7 +27,7 @@ jobs:
         run: isort --check-only --diff --profile black .
 
       - name: Lint with flake8
-        run: flake8 . --max-line-length 120 --exclude=assets,data
+        run: flake8 .
 
       - name: Type check with mypy
         run: mypy models/ inference/ training/ --ignore-missing-imports || true

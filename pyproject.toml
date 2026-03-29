@@ -1,0 +1,17 @@
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+markers = [
+    "unit: unit tests",
+    "integration: integration tests",
+    "gpu: requires GPU",
+    "slow: slow tests",
+    "benchmark: benchmark tests",
+]
+
+[tool.black]
+target-version = ["py39"]
+line-length = 88
+
+[tool.isort]
+profile = "black"
